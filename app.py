@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-df = pd.read_csv("../vehicles_us.csv")
+df = pd.read_csv("vehicles_us.csv")
 
 st.title("Análisis de Datos de Vehículos")
 if st.checkbox("Mostrar datos"): 
