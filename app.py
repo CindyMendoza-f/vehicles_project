@@ -11,10 +11,11 @@ st.title("Análisis de Datos de Vehículos")
 if st.checkbox("Mostrar datos"): 
     st.write(df.head())
 
-st.subheader("Distribución de precios")
-fig, ax = plt.subplots()
-df['price'].hist(bins=30, ax=ax)
-st.pyplot(fig)
+if st.button("Mostrar distribución de precios"):
+    st.subheader("Distribución de precios")
+    fig, ax = plt.subplots()
+    df['price'].hist(bins=30, ax=ax)
+    st.pyplot(fig)
 
 def update():
     st.rerun()
